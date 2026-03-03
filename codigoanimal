@@ -1,0 +1,25 @@
+public class Animal {
+    //Atributos da classe
+    string nomeAnimal;
+    int numeroDePatas;
+    boolean temRabo;
+    sring cor;
+    int idade;
+    double peso;
+    string tipoAlimentacao
+    char genero;
+}
+
+// metodo para imprimir os atributos do animal
+public void printStatus(){
+    system.out.printLn("nome: " + numeroDepatas);
+    system.out.printLn("numero de patas" + numeroDepatas);
+    system.out.printLn("tem rabo? + numeroDePatas);
+    system.out.printLn("cor: " + cor );
+    system.out.printLn("idade: " + idade );
+    system.out.printLn("peso: " + peso);
+    system.out.printLn("tipo de alimentação: " + tipodealimentacao);
+    system.out.printLn("genero": " + genero);
+    system.out.printLn("-------------------------);
+    
+}//metodo principal (main)
