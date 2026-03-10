@@ -1,25 +1,54 @@
 public class Animal {
-    //Atributos da classe
-    string nomeAnimal;
+    // Atributos da classe
+    String nomeAnimal;
     int numeroDePatas;
     boolean temRabo;
-    sring cor;
+    String cor;
     int idade;
     double peso;
-    string tipoAlimentacao
+    String tipoAlimentacao;
     char genero;
+
+    // Método para imprimir os atributos do animal
+    public void printStatus() {
+        System.out.println("Nome: " + nomeAnimal);
+        System.out.println("Número de patas: " + numeroDePatas);
+        System.out.println("Tem rabo? " + temRabo);
+        System.out.println("Cor: " + cor);
+        System.out.println("Idade: " + idade);
+        System.out.println("Peso: " + peso);
+        System.out.println("Tipo de alimentação: " + tipoAlimentacao);
+        System.out.println("Gênero: " + genero);
+        System.out.println("-------------------------");
+    }
+
+    // Método principal (main)
+    public static void main(String[] args) {
+        // Criando o primeiro animal
+        Animal cachorro = new Animal();
+        cachorro.nomeAnimal = "Euclides";
+        cachorro.numeroDePatas = 4;
+        cachorro.temRabo = true;
+        cachorro.cor = "marrom";
+        cachorro.idade = 3;
+        cachorro.peso = 12.5;
+        cachorro.tipoAlimentacao = "ração";
+        cachorro.genero = 'm';
+
+        // Criando o segundo animal
+        Animal cavalo = new Animal();
+        cavalo.nomeAnimal = "Filomena";
+        cavalo.numeroDePatas = 4;
+        cavalo.temRabo = true;
+        cavalo.cor = "branco";
+        cavalo.idade = 2;
+        cavalo.peso = 400.7;
+        cavalo.tipoAlimentacao = "feno";
+        cavalo.genero = 'f';
+
+        // Chamando métodos para imprimir os atributos
+        cachorro.printStatus();
+        cavalo.printStatus();
+    }
 }
 
-// metodo para imprimir os atributos do animal
-public void printStatus(){
-    system.out.printLn("nome: " + numeroDepatas);
-    system.out.printLn("numero de patas" + numeroDepatas);
-    system.out.printLn("tem rabo? + numeroDePatas);
-    system.out.printLn("cor: " + cor );
-    system.out.printLn("idade: " + idade );
-    system.out.printLn("peso: " + peso);
-    system.out.printLn("tipo de alimentação: " + tipodealimentacao);
-    system.out.printLn("genero": " + genero);
-    system.out.printLn("-------------------------);
-    
-}//metodo principal (main)
