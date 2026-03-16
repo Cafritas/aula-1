@@ -22,6 +22,12 @@ public class Animal {
         System.out.println("-------------------------");
     }
 
+    // Método para emitir som
+    public void emitirSom(String som) {
+        System.out.println(nomeAnimal + " faz: " + som);
+        System.out.println("-------------------------");
+    }
+
     // Método principal (main)
     public static void main(String[] args) {
         // Criando o primeiro animal
@@ -49,6 +55,9 @@ public class Animal {
         // Chamando métodos para imprimir os atributos
         cachorro.printStatus();
         cavalo.printStatus();
+
+        // Chamando método para emitir som
+        cachorro.emitirSom("Au Au");
+        cavalo.emitirSom("Relincho");
     }
 }
-
